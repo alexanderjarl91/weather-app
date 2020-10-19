@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veður</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="location">
+        <h1 class="location-timezone">Fetching data..</h1>
+        <img class="icon" src="" alt="" />
+      </div>
+
+      <div class="temperature">
+        <div class="degree-section">
+          <h2 class="degree"></h2>
+        </div>
+        <div class="temperature-description"></div>
+      </div>
+
+      <div class="modal">
+        <div class="interior">
+          <a class="btn" href="#open-modal">readme.md</a>
+        </div>
+      </div>
+      <div id="open-modal" class="modal-window">
+        <div>
+          <a href="#" title="Close" class="modal-close">Close</a>
+          <h1>README.md</h1>
+          <p>
+            This webapp uses the Geolocation web API to fetch the users
+            coordinates. Then it collects specific data from the OpenWeatherMap
+            API: name of location, temperature, weather description and weather
+            icon.<br /><br />
+            I had to translate the temperature to celsius from kelvin and use a
+            seperate API to fetch the icons corresponding to the weather
+            description. I had alot of trouble hosting this page. It wouldn't
+            work on Surge because the geolocation web api won't run unless the
+            page is secured by an SSL certificate.<br /><br />Theres comments in
+            the code for explanation.<br /><br />
+          </p>
+          <div>
+            <small class="small"
+              >By the way, I stole this modal from a codepen I found online and
+              styled it to fit this design🤫</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="footer">Alexander Jarl | Vefskólinn, API consumption project</p>
+
+    <script src="app.js"></script>
+  </body>
+</html>
