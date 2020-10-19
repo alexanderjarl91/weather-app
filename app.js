@@ -8,7 +8,6 @@
     
 
     if (navigator.geolocation) {
-
     navigator.geolocation.getCurrentPosition(position =>{
         alert(JSON.stringify(navigator.geolocation))
         console.log(position);
@@ -56,6 +55,8 @@
 
 
         });
+    }, error => {
+        alert(error.message)
     })};
 
 
