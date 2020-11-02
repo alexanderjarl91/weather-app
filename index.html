@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <div class="location">
-        <h1 class="location-timezone">Fetching data..</h1>
+        <h1 class="location-timezone">Choose a location</h1>
         <img class="icon" src="" alt="" />
       </div>
 
@@ -34,6 +34,14 @@
             coordinates. Then it collects specific data from the OpenWeatherMap
             API: name of location, temperature, weather description and weather
             icon.<br /><br />
+
+            The Marbella button is the cleanest coded one. It fetches API data
+            with an asynchronous function where it awaits for the data to be
+            received before it continues to run the rest of the function. That
+            function also uses the try..catch statement to display an error
+            message if theres an error fetching from the API
+            <br /><br />
+
             I had to translate the temperature to celsius from kelvin and use a
             seperate API to fetch the icons corresponding to the weather
             description. I had alot of trouble hosting this page. It wouldn't
@@ -50,8 +58,14 @@
         </div>
       </div>
     </div>
+    <div class="locationButtons">
+      <button class="ny">New York</button>
+      <button class="current">Current location</button>
+      <button class="marbella">Marbella</button>
+    </div>
+
     <p class="footer">Alexander Jarl | Vefskólinn, API consumption project</p>
 
-    <script src="app.js"></script>
+    <script src="app2.js"></script>
   </body>
 </html>

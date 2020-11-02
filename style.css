@@ -19,6 +19,8 @@ h1 {
   font-size: 50px;
   color: #20322b;
   opacity: 0.9;
+  min-width: 20rem;
+  text-align: center;
 }
 
 .location,
@@ -51,7 +53,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   padding: 30px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -59,7 +61,29 @@ h1 {
 }
 
 .temperature-description {
-  color: #fee2c2;
+  color: #20322b;
+  opacity: 0.3;
+  text-align: center;
+}
+
+.locationButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+.ny,
+.marbella,
+.current {
+  background: none;
+  color: #ffead0;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  margin: 2rem;
 }
 
 p {
@@ -69,6 +93,15 @@ p {
 @media only screen and (max-width: 600px) {
   p {
     font-size: 12px;
+  }
+
+  .container {
+    max-width: 15rem;
+  }
+
+  .modal-window > div {
+    max-width: 20rem;
+    margin-bottom: 2rem;
   }
 }
 
